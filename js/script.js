@@ -117,8 +117,8 @@ const infoForModal = (infoForModal) => {
     document.getElementById('leftCardTitle').innerText = description;
 
     document.getElementById('right-div').innerHTML = `
-         <img src="${image_link[0] ? image_link[0] : 'No image found'}" class="card-img-top rounded" alt="...">
-         <div class="accuracy">
+         <img src="${image_link[0] ? image_link[0] : 'No image found'}" class="card-img-top rounded position-relative" alt="...">
+         <div class="accuracy position-absolute top-0 end-0 p-1">
                     ${accuracy.score * 100 > 80 ? '<button class="btn btn-success">Accuracy: ' + accuracy.score * 100 + '%</button>' : '<button class="btn btn-danger">Accuracy Low</button>'
         }
                     
